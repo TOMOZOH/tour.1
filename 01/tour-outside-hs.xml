@@ -1,4 +1,4 @@
-﻿<krpano title="TEST 360°Tour" >
+﻿<krpano title="Virtual Tour" >
 
 	<include url="%VIEWER%/skin/vtourskin.xml" />
 
@@ -29,7 +29,7 @@
 	               thumbs_loop="false"
 	               tooltips_buttons="false"
 	               tooltips_thumbs="false"
-	               tooltips_hotspots="false"
+	               tooltips_hotspots="true"
 	               tooltips_mapspots="false"
 	               deeplinking="false"
 	               loadscene_flags="MERGE"
@@ -47,10 +47,10 @@
 	               controlbar_overlap.fractionalscaling="0"
 	               design_skin_images="vtourskin.png"
 	               design_bgcolor="0x2D3E50"
-	               design_bgalpha="0"
+	               design_bgalpha="0.8"
 	               design_bgborder="0"
 	               design_bgroundedge="1"
-	               design_bgshadow="0 4 10 0x000000 0"
+	               design_bgshadow="0 4 10 0x000000 0.3"
 	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
 	               design_thumbborder_padding="2"
 	               design_thumbborder_bgroundedge="0"
@@ -69,7 +69,9 @@
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
 	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
 	
-	<include url="inc.xml" />
+	<include url="%VIEWER%/opxml/visit/visit-thumb.xml" />
+
+	<include url="outside-hs_1.xml" />
 
 	<scene name="scene_1" title="岩石" onstart="" thumburl="%VIEWER%/../panos/a1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
@@ -99,8 +101,5 @@
 
 
 	</scene>
-
-
-
 
 </krpano>
